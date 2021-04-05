@@ -22,7 +22,7 @@ library
   exposed-modules:     MyLib
   -- other-modules:
   -- other-extensions:
-  build-depends:       base >=4.13 && <4.14
+  build-depends:       base >=4.14 && <4.15
   hs-source-dirs:      src
   default-language:    Haskell2010
 
@@ -30,7 +30,7 @@ executable shakyo-tmp-in-haskell
   main-is:             Main.hs
   -- other-modules:
   -- other-extensions:
-  build-depends:       base >=4.13 && <4.14, shakyo-tmp-in-haskell
+  build-depends:       base >=4.14 && <4.15, shakyo-tmp-in-haskell
   hs-source-dirs:      app
   default-language:    Haskell2010
 
@@ -39,4 +39,4 @@ test-suite shakyo-tmp-in-haskell-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             MyLibTest.hs
-  build-depends:       base >=4.13 && <4.14
+  build-depends:       base >=4.14 && <4.15
