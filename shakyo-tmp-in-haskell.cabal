@@ -50,6 +50,7 @@ library
   -- cabal-fmt: expand src
   exposed-modules:
     Basic.Nat
+    Basic.Overlapping
     Basic.TypeOf
 
   hs-source-dirs:  src
