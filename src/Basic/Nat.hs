@@ -13,3 +13,7 @@ instance ReifyNat Z where
 
 instance ReifyNat a => ReifyNat (S a) where
   reifyNat = 1 + reifyNat @a
+
+type family Sum a b where
+  Sum Z b = b
+  Sum (S a) b = S (Sum a b)

@@ -35,6 +35,7 @@ common shared-properties
     AllowAmbiguousTypes
     ScopedTypeVariables
     TypeApplications
+    TypeFamilies
 
 common test-depends
   build-depends:
