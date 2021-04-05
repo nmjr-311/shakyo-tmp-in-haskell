@@ -1,0 +1,10 @@
+cradle:
+  cabal:
+    - path: "src"
+      component: "lib:shakyo-tmp-in-haskell"
+
+    - path: "app/Main.hs"
+      component: "shakyo-tmp-in-haskell:exe:shakyo-tmp-in-haskell"
+
+    - path: "test"
+      component: "shakyo-tmp-in-haskell:test:shakyo-tmp-in-haskell-test"
