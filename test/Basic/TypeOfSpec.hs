@@ -4,8 +4,8 @@ module Basic.TypeOfSpec where
 import           Basic.TypeOf (TypeOf, typeOf)
 import           Test.Hspec   (Spec, describe, it, shouldBe)
 
-spec :: Spec
-spec = describe "TypeOfSpec" $ do
+spec_typeOf :: Spec
+spec_typeOf = describe "TypeOfSpec" $ do
   basic
   composition
   userDefined

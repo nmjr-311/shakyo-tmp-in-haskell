@@ -32,8 +32,8 @@ common shared-properties
     -Wmissing-import-lists -Wcompat
 
 common test-depends
-  build-depends:      hspec ^>=2.7.4
-  build-tool-depends: hspec-discover:hspec-discover -any
+  build-depends:      hspec ^>=2.7.4, tasty ^>=1.4.1, tasty-hspec ^>=1.1.6
+  build-tool-depends: tasty-discover:tasty-discover
 
 library
   import:          shared-properties
@@ -55,7 +55,7 @@ test-suite shakyo-tmp-in-haskell-test
   import:         shared-properties, test-depends
   type:           exitcode-stdio-1.0
   hs-source-dirs: test
-  main-is:        Spec.hs
+  main-is:        Tasty.hs
 
   -- cabal-fmt: expand test -Spec
   other-modules:  Basic.TypeOfSpec
