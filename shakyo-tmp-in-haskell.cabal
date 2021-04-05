@@ -39,7 +39,10 @@ library
   import:          shared-properties
 
   -- cabal-fmt: expand src
-  exposed-modules: MyLib
+  exposed-modules:
+    Basic.TypeOf
+    MyLib
+
   hs-source-dirs:  src
 
 executable shakyo-tmp-in-haskell
@@ -58,5 +61,8 @@ test-suite shakyo-tmp-in-haskell-test
   main-is:        Spec.hs
 
   -- cabal-fmt: expand test -Spec
-  other-modules:  MyLibSpec
+  other-modules:
+    Basic.TypeOfSpec
+    MyLibSpec
+
   build-depends:  shakyo-tmp-in-haskell
