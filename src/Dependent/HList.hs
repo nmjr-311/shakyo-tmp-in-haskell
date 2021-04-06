@@ -1,6 +1,5 @@
 {-# LANGUAGE FlexibleContexts  #-}
 {-# LANGUAGE FlexibleInstances #-}
-{-# LANGUAGE GADTs             #-}
 {-# LANGUAGE PolyKinds         #-}
 
 {-# OPTIONS_GHC -Wno-missing-import-lists #-}

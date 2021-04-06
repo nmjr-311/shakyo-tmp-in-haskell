@@ -38,6 +38,7 @@ common shared-properties
     TypeApplications
     TypeFamilies
     TypeOperators
+    GADTs
 
 common test-depends
   build-depends:
@@ -56,6 +57,7 @@ library
     Basic.Overlapping
     Basic.TypeOf
     Dependent.HList
+    Dependent.Proof
     Example.Flatten
     Generic.Authentication
 
