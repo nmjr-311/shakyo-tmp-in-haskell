@@ -34,11 +34,11 @@ common shared-properties
   default-extensions:
     AllowAmbiguousTypes
     DataKinds
+    GADTs
     ScopedTypeVariables
     TypeApplications
     TypeFamilies
     TypeOperators
-    GADTs
 
 common test-depends
   build-depends:
@@ -58,7 +58,9 @@ library
     Basic.TypeOf
     Dependent.HList
     Dependent.Proof
+    Dependent.UnitList
     Example.Flatten
+    Example.SubTyping
     Generic.Authentication
 
   hs-source-dirs:  src
