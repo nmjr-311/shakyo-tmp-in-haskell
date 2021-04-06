@@ -1,4 +1,4 @@
-module Basic.TypeOf where
+module Basic.TypeOf (TypeOf(..)) where
 
 class TypeOf a where
   typeOf :: String
@@ -8,6 +8,9 @@ instance TypeOf Bool where
 
 instance TypeOf Char where
   typeOf = "Char"
+
+instance TypeOf Int where
+  typeOf = "Int"
 
 instance (TypeOf a, TypeOf b) => TypeOf (a, b) where
   typeOf = "(" ++ typeOf @a ++ ", " ++ typeOf @b ++ ")"

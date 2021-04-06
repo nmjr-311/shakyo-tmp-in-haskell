@@ -33,9 +33,11 @@ common shared-properties
 
   default-extensions:
     AllowAmbiguousTypes
+    DataKinds
     ScopedTypeVariables
     TypeApplications
     TypeFamilies
+    TypeOperators
 
 common test-depends
   build-depends:
@@ -53,6 +55,7 @@ library
     Basic.Nat
     Basic.Overlapping
     Basic.TypeOf
+    Dependent.HList
     Example.Flatten
     Generic.Authentication
 
@@ -77,6 +80,7 @@ test-suite shakyo-tmp-in-haskell-test
   other-modules:
     Basic.NatSpec
     Basic.TypeOfSpec
+    Dependent.HListSpec
     Example.FlattenSpec
 
   build-depends:  shakyo-tmp-in-haskell
