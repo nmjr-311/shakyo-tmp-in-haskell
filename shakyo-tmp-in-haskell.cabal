@@ -54,6 +54,7 @@ library
     Basic.Overlapping
     Basic.TypeOf
     Example.Flatten
+    Generic.Authentication
 
   hs-source-dirs:  src
 
